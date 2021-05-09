@@ -1,0 +1,57 @@
+body{
+  background: rgb(159, 170, 177);
+}
+.heading{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  justify-content: space-between;
+  background: rgb(221, 221, 221);
+}
+.heading-item{
+  height:55px;
+  width:200px;
+  text-align: left;
+  align-self: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px;
+  border: 2px double rgb(66, 65, 65);
+}
+
+.meet{
+  height:40px;
+  width:200px;
+  text-align: left;
+  align-self: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px;
+}
+.photos{
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 3s ease-in-out 0.5s;
+}
+
+.my-photos{
+  border: 5px solid rgb(221, 221, 221);
+}
+
+.my-photos:hover{
+  transform: scale(1.2);
+}
+
+.heading-item:hover{
+  transform: scale(1.5);
+}
+
+.ping:hover{
+  transform: scale(1.5);
+}
+
+p{
+  font-size: 25px;
+}
