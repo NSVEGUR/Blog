@@ -2,22 +2,23 @@ body{
   background: rgb(159, 170, 177);
 }
 .heading{
-  width: 300px;
+  height: 80px;
   display: flex;
-  flex-direction: column;
-  float: right;
   justify-content: space-between;
   background: rgb(221, 221, 221);
 }
 .heading-item{
   height:55px;
   width:200px;
-  text-align: left;
-  align-self: center;
+  text-align: center;
+  align-self: flex-start;
   font-size: 25px;
   font-weight: bold;
   margin: 20px;
-  border: 2px double rgb(66, 65, 65);
+}
+
+.para{
+  width: 1360px;
 }
 
 .meet{
@@ -29,18 +30,18 @@ body{
   font-weight: bold;
   margin: 20px;
 }
-.photos{
-  height: 500px;
-  display: flex;
-  justify-content: space-between;
-  transition: all 3s ease-in-out 0.5s;
+
+
+#my-photo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  transition: all 200ms ease-in-out 0.5s;
+  border:5px solid rgb(101, 107, 110);
 }
 
-.my-photos{
-  border: 5px solid rgb(221, 221, 221);
-}
-
-.my-photos:hover{
+#my-photo:hover{
   transform: scale(1.2);
 }
 
@@ -55,3 +56,5 @@ body{
 p{
   font-size: 25px;
 }
+
+
