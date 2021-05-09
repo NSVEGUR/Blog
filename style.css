@@ -9,7 +9,7 @@ body{
 }
 .heading-item{
   height:55px;
-  width:250px;
+  width:400px;
   text-align: center;
   align-self: flex-start;
   font-size: 25px;
@@ -24,6 +24,7 @@ body{
 .meet{
   height:40px;
   width:200px;
+  display: flex;
   text-align: left;
   align-self: center;
   font-size: 25px;
