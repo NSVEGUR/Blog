@@ -6,19 +6,7 @@ header, footer{
   background: darkgray;
   text-align:center;
 }
-.heading{
-  animation-name: blur;
-  animation-timing-function: ease-in-out;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
-}
-.ending{
-  animation-name: blur;
-  animation-timing-function: ease-in-out;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
-  animation-direction: reverse;
-}
+
 p{
   font-family: 'Itim', cursive;
   font-size:25px;
@@ -84,15 +72,7 @@ h1,h2,h3{
   clear: both;
 }
 
-@keyframes blur{
-  from{
-    
-  }
-  to{
-    text-shadow: 3px 3px 3px lightslategrey;
-    transform: scale(1.1);
-  }
-}
+
 @media screen and (max-width: 1100px) {
   .leftcolumn, .rightcolumn {
     width: 100%;
