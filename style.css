@@ -2,10 +2,18 @@ body{
   background: rgb(212, 206, 206);
   padding: 20px;
 }
-
-.heading{
+header, footer{
+  background: darkgray;
   text-align:center;
 }
+p{
+  font-family: 'Itim', cursive;
+  font-size:25px;
+}
+h1,h2,h3{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .left-column{
   float:left;
   width:74%;
@@ -13,7 +21,7 @@ body{
 .my-photo{
   width:100%;
 }
-#gif{
+.gif{
   width: 100%;
 }
 .card{
@@ -26,17 +34,23 @@ body{
 
 .box-1{
   display:grid;
-  height: 200px;
+  height: 220px;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
 }
 
 .box-2{
   display:flex;
+  width:100%;
+  justify-content: space-around;
 }
-
+.ping{
+  width:33.33%;
+  align-items: center;
+}
 .box-item{
   margin: 10px;
+  font-family: 'Josefin Sans', sans-serif;
   text-align: center;
   font-weight: bolder;
   text-decoration: underline;
@@ -57,7 +71,7 @@ body{
   clear: both;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .leftcolumn, .rightcolumn {
     width: 100%;
     padding: 0;
