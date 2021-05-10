@@ -1,64 +1,65 @@
 body{
-  background: rgb(159, 170, 177);
+  background: rgb(212, 206, 206);
+  padding: 20px;
 }
+
 .heading{
-  height: 80px;
-  width: 150vw;
-  display: flex;
-  justify-content: space-between;
-  background: rgb(221, 221, 221);
+  text-align:center;
 }
-.heading-item{
-  height:55px;
-  width:14.28vw;
+.left-column{
+  float:left;
+  width:74%;
+}
+.my-photo{
+  width:100%;
+}
+#gif{
+  width: 100%;
+}
+.card{
+  border: 5px solid darkgray;
+}
+.right-column{
+  float:right;
+  width:24%;
+}
+
+.box-1{
+  display:grid;
+  height: 200px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}
+
+.box-2{
+  display:flex;
+}
+
+.box-item{
+  margin: 10px;
   text-align: center;
-  align-self: flex-start;
-  font-size: 25px;
-  font-weight: bold;
-  margin: 20px;
-  flex: 0 0 14.28vw;
+  font-weight: bolder;
+  text-decoration: underline;
 }
-
-.para{
-  width: 150vw;
+.box-image{
+  margin: 10px;
+  text-align: center;
 }
-
-.meet{
-  height:40px;
-  width:200px;
-  display: flex;
-  text-align: left;
-  align-self: center;
-  font-size: 25px;
-  font-weight: bold;
-  margin: 20px;
-}
-
-
-#my-photo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 140vw;
-  height: 90vh;
-  transition: all 200ms ease-in-out 0.5s;
-  border:5px solid rgb(101, 107, 110);
-}
-
-#my-photo:hover{
-  transform: scale(1.2);
-}
-
-.heading-item:hover{
+.box-image:hover{
   transform: scale(1.5);
 }
-
 .ping:hover{
   transform: scale(1.5);
 }
-
-p{
-  font-size: 25px;
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
-
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
