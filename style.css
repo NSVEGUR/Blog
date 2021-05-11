@@ -8,21 +8,49 @@ header, footer{
 }
 
 p{
-  font-family: 'Itim', cursive;
+  font-family: 'Quicksand', sans-serif;
   font-size:25px;
+  font-weight: bold;
 }
 h1,h2,h3{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Palanquin Dark', sans-serif;
+
 }
 
 .left-column{
   float:left;
   width:74%;
 }
-.my-photo{
+.fam{
   width:100%;
+  height: 100%;
 }
+.image{
+  position:relative;
+  width:100%;
+  height: 100%;
+}
+.image-overlay{
+  position: absolute;
+  width:100%;
+  top:0;
+  left:0;
+  height:100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+.image-text{
+  font-family:'Josefin Sans', sans-serif ;
+  color:white;
 
+}
+.image-overlay:hover{
+  opacity: 1;
+}
 .gif{
   width: 100%;
 }
@@ -39,6 +67,15 @@ h1,h2,h3{
   height: 220px;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
+}
+.pic{
+  width:100%;
+  height:450px;
+  animation-name: slider;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .box-2{
@@ -73,6 +110,24 @@ h1,h2,h3{
   clear: both;
 }
 
+@keyframes slider{
+  0%{
+    background: url(Images/Screenshot_4.png);
+    background-size: 100% 450px; 
+  }
+  40%{
+    background: url(Images/Screenshot_8.png);
+    background-size: 100% 450px;
+  }
+  70%{
+    background: url(Images/Screenshot_9.png);
+    background-size: 100% 450px;
+  }
+  100%{
+    background: url(Images/Screenshot_4.png);
+    background-size: 100% 450px; 
+  }
+}
 
 @media screen and (max-width: 1100px) {
   .leftcolumn, .rightcolumn {
