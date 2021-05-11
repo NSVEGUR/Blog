@@ -2,7 +2,29 @@ body{
   background: rgb(212, 206, 206);
   padding: 20px;
 }
-header, footer{
+.heading{
+  position: relative;
+  width: 100%;
+}
+.heading-image{
+  width: 100%;
+}
+.heading-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background:rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heading-text{
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+}
+footer{
   background: darkgray;
   text-align:center;
 }
