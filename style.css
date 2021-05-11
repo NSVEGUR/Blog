@@ -34,10 +34,11 @@ p{
   font-family: 'Quicksand', sans-serif;
   font-size:25px;
   font-weight: bold;
+  text-align:justify;
+  text-justify: inter-word;
 }
 h1,h2,h3{
   font-family: 'Palanquin Dark', sans-serif;
-
 }
 
 .left-column{
