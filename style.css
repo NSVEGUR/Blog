@@ -1,5 +1,5 @@
 html{
-  background: url("https://i.pinimg.com/originals/eb/34/cf/eb34cf360f4c2139c3b820de782788e0.jpg") no-repeat center center fixed;
+  background: url("https://i.pinimg.com/originals/eb/34/cf/eb34cf360f4c2139c3b820de782788e0.jpg") repeat-y center center fixed;
   background-size: cover cover;
 }
 
