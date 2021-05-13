@@ -31,7 +31,7 @@ body{
   height:60px;
   display:flex;
   align-items: center;
-  background: gray;;
+  background: rgba(0, 0, 0, 0.7);
 }
 .head-item{
   width: 33.33333%;
@@ -46,7 +46,7 @@ body{
 }
 
 .head-item:hover{
-  background: rgba(0, 0, 0, 0.6);
+  background: gray;
 }
 footer{
   background: darkgray;
@@ -106,7 +106,7 @@ h1,h2,h3{
 }
 .card{
   border: 5px solid darkgray;
-  transition: background 2s ease-in-out 20ms;
+  transition: background 1s ease-in-out 0.5ms;
 }
 .right-column{
   float:right;
@@ -132,11 +132,17 @@ h1,h2,h3{
 .box-2{
   display:flex;
   width:100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
-.ping{
-  width:33.33%;
+.ping-1{
+  width:50%;
   align-items: center;
+  margin-left:20px;
+}
+.ping-2{
+  width:50%;
+  align-items: center;
+  margin-top:20px;
 }
 #talk{
   width: 80%;
@@ -164,7 +170,10 @@ h1,h2,h3{
 .box-image:hover{
   transform: scale(1.5);
 }
-.ping:hover{
+.ping-1:hover{
+  transform: scale(1.5);
+}
+.ping-2:hover{
   transform: scale(1.5);
 }
 .row:after {
