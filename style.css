@@ -1,7 +1,8 @@
-body{
-  background: rgb(212, 206, 206);
-  padding: 20px;
+html{
+  background: url("https://i.pinimg.com/originals/eb/34/cf/eb34cf360f4c2139c3b820de782788e0.jpg") no-repeat center center fixed;
+  background-size: cover cover;
 }
+
 .heading{
   position: relative;
   width: 100%;
@@ -27,7 +28,6 @@ body{
 }
 
 .head-flex{
-  width: 100%;
   height:60px;
   display:flex;
   align-items: center;
@@ -42,11 +42,12 @@ body{
   font-family:  'Palanquin Dark', sans-serif; 
 }
 .menu{
-  color:rgb(243, 231, 210);
+  color:rgb(0,0, 0);
+  text-shadow: 3px 3px 3px gray;
 }
 
 .head-item:hover{
-  background: gray;
+  background: white;
 }
 footer{
   background: darkgray;
@@ -143,6 +144,7 @@ h1,h2,h3{
   width:50%;
   align-items: center;
   margin-top:20px;
+  margin-right:20px;
 }
 #talk{
   width: 80%;
