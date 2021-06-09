@@ -38,7 +38,7 @@ nav{
   height:60px;
   display:flex;
   align-items: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgb(0, 0, 0);
 }
 .head-item{
   width: 33.33333%;
