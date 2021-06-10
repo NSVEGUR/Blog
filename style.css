@@ -10,11 +10,12 @@ html{
   align-items: center;
 }
 .mode{
-  width: 4rem;
+  width: 3rem;
   font-size: 2rem;
   font-weight: 900;
+  border: none;
   align-self: center;
-  border-radius: 0.5rem;
+  border-radius: 50%;
 }
 nav{
   position: sticky;
