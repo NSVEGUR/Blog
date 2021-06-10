@@ -6,6 +6,12 @@ html{
 a:active{
   background-color: none;
 }
+button:hover{
+  backface-visibility: hidden;
+}
+a:hover{
+  backface-visibility: hidden;
+}
 .bar{
   display: flex;
   justify-content: space-between;
