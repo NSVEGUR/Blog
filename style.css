@@ -6,11 +6,13 @@ html{
 a:active{
   background-color: none;
 }
-button:hover{
+button:focus{
+  outline: none;
   backface-visibility: hidden;
 }
-a:hover{
+a:focus{
   backface-visibility: hidden;
+  background-color: none;
 }
 .bar{
   display: flex;
