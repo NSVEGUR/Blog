@@ -3,7 +3,9 @@ html{
   background-size: cover cover;
   color: white;
 }
-
+a:active{
+  background-color: none;
+}
 .bar{
   display: flex;
   justify-content: space-between;
