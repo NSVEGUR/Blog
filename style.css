@@ -2,6 +2,7 @@ html{
   background: black;
   background-size: cover cover;
   color: white;
+  transition: all 1s ease-in-out 10ms;
 }
 a:active{
   background-color: none;
