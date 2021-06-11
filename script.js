@@ -11,6 +11,7 @@ const light = function () {
   document.querySelector('.mode').textContent = '☾';
   document.querySelector('.mode').style.backgroundColor = '#000000';
   document.querySelector('.mode').style.color = '#ffffff';
+  document.querySelector('.drop').style.color = '#000000';
   flagMode = flagMode ? 0 : 1;
 }
 
@@ -20,6 +21,7 @@ const dark = function () {
   document.querySelector('.mode').textContent = '✹';
   document.querySelector('.mode').style.backgroundColor = '#ffffff';
   document.querySelector('.mode').style.color = '#000000';
+  document.querySelector('.drop').style.color = '#ffffff';
   flagMode = flagMode ? 0 : 1;
 }
 

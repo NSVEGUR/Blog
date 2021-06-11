@@ -25,31 +25,35 @@ a:focus{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5px;
 }
 .mode{
-  width: 3rem;
-  font-size: 2rem;
+  width: 4.2rem;
+  font-size: 3rem;
   font-weight: 900;
   border: none;
   align-self: center;
   border-radius: 50%;
   position: absolute;
   top: 2rem;
-  right: 3.2rem;
-  z-index: 7;
+  right: 6.2rem;
+  z-index: 9;
 }
 
 .drop{
-  width: 3rem;
-  font-size: 2rem;
+  width: 6rem;
+  font-size: 6rem;
   font-weight: 900;
   border: none;
+  text-align: center;
   align-self: center;
   border-radius: 50%;
   position: absolute;
-  top: 2rem;
+  top: 0rem;
   right: 0rem; 
-  z-index: 7;
+  z-index: 9;
+  background:none;
+  color: white;
 }
 nav{
   position: sticky;
