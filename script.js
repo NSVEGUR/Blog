@@ -1,5 +1,12 @@
 'use strict';
 
+const splash = document.querySelector('.splash');
+
+document.addEventListener('DOMContentLoaded', (e) => {
+  setTimeout(() => {
+    splash.classList.add('display-none');
+  }, 3000);
+});
 let flagMode = 1;
 let flagOverlay = 1;
 let dropDown = document.querySelector('.intro');

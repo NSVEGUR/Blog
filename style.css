@@ -6,10 +6,52 @@ html{
 }
 
 body{
-  position: absolute;
-  margin: 0;
+  position: relative;
   padding: 0;
 }
+
+.splash{
+  background: black;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+}
+
+.splash.display-none{
+  background: black;
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  z-index: -1;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+  transition: all 1s ease-in-out 10ms;
+}
+
+
+
+.fade{
+  background: none;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  opacity: 1;
+  animation: fadein 1s ease-in-out 0s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 a:active{
   background-color: none;
 }
