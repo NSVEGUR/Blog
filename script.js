@@ -45,7 +45,7 @@ document.querySelector('.drop').addEventListener
   ('click', function () {
     dropDown.classList.toggle('hidden');
     dropOverlay.classList.toggle('hidden');
-    flagOverlay ? document.querySelector('.drop').textContent = '»' : document.querySelector('.drop').textContent = '≡';
+    flagOverlay ? document.querySelector('.drop').textContent = '–' : document.querySelector('.drop').textContent = '≡';
     flagOverlay = flagOverlay ? 0 : 1;
   });
 
@@ -53,7 +53,7 @@ document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' && !dropDown.classList.contains('hidden')) {
     dropDown.classList.add('hidden');
     dropOverlay.classList.add('hidden');
-    flagOverlay ? document.querySelector('.drop').textContent = '»' : document.querySelector('.drop').textContent = '≡';
+    flagOverlay ? document.querySelector('.drop').textContent = '–' : document.querySelector('.drop').textContent = '≡';
     flagOverlay = flagOverlay ? 0 : 1;
   }
 });
@@ -61,6 +61,6 @@ document.addEventListener('keydown', function (e) {
 document.querySelector('.body-overlay').addEventListener('click', function () {
   dropDown.classList.add('hidden');
   dropOverlay.classList.add('hidden');
-  flagOverlay ? document.querySelector('.drop').textContent = '»' : document.querySelector('.drop').textContent = '≡';
+  flagOverlay ? document.querySelector('.drop').textContent = '–' : document.querySelector('.drop').textContent = '≡';
   flagOverlay = flagOverlay ? 0 : 1;
 })
