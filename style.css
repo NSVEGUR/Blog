@@ -49,7 +49,7 @@ a:focus{
   align-self: center;
   border-radius: 50%;
   position: absolute;
-  top: 0rem;
+  top: -1rem;
   right: 0rem; 
   z-index: 9;
   background:none;
@@ -250,6 +250,12 @@ h1,h2,h3{
   z-index: 5;
   display: grid;
   padding: 10px 0;
+  background: white;
+  color: black;
+  border-radius: 0rem;
+  margin: 0;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   justify-content: center;
