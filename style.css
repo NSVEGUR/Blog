@@ -158,16 +158,15 @@ nav{
 }
 
 .menu:hover{
-  color:rgb(131, 37, 131);
   padding: 0% 33%;
-  background: rgba(185, 97, 185, 0.144);
+  background: rgba(152, 111, 222, 0.6);
   border-radius: 5rem;
 }
 h1{
-  background: rgba(185, 97, 185, 0.144);
+  background: rgba(152, 111, 222, 0.3);
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
-  color:rgb(185, 81, 185);
+  color:rgb(152, 111, 222);
 }
 
 
@@ -225,7 +224,7 @@ h1,h2,h3{
   border-bottom-right-radius: 3rem;
 }
 .card{
-  border: 6px solid rgba(185, 97, 185, 0.144);
+  border: 6px solid rgba(152, 111, 222, 0.3);
   border-radius: 3rem;
 }
 
@@ -265,8 +264,8 @@ h1,h2,h3{
   margin-right:20px;
 }
 
-.box-card, .intro{
-  background:rgba(185, 97, 185, 0.144);
+.box-card{
+  background:rgba(152, 111, 222, 0.3);
   border-radius: 2rem;
   margin: 10px;
   box-shadow: 2px 2px 4px white;
