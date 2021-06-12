@@ -165,8 +165,7 @@ nav{
 }
 h1{
   background: rgba(185, 97, 185, 0.144);
-  border-top-left-radius: 0.8rem;
-  border-top-right-radius: 0.8rem;
+  border-radius: 0.8rem;
   color:rgb(131, 37, 131);
 }
 
@@ -201,13 +200,13 @@ h1,h2,h3{
 .image-overlay{
   position: absolute;
   width:100%;
-  top:0;
-  left:0;
+  inset: 0;
   height:100%;
   background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 2rem;
   opacity: 0;
   transition: opacity 300ms ease-in-out;
 }
@@ -227,6 +226,7 @@ h1,h2,h3{
 .card{
   border: 6px solid rgba(185, 97, 185, 0.144);
   border-radius: 3rem;
+  padding: 3rem;
 }
 
 
