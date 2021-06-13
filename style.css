@@ -1,5 +1,5 @@
 html{
-  background: black;
+  background: #121212;
   background-size: cover cover;
   color: white;
   transition: all 0.5s linear 10ms;
@@ -162,11 +162,6 @@ nav{
   padding: 0% 33%;
   background: rgba(185, 97, 185, 0.144);
   border-radius: 5rem;
-}
-h1{
-  background: rgba(185, 97, 185, 0.144);
-  border-radius: 0.8rem;
-  color:rgb(131, 37, 131);
 }
 
 
