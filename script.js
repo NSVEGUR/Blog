@@ -19,7 +19,6 @@ const light = function () {
   document.querySelector('.mode').style.backgroundColor = '#000000';
   document.querySelector('.mode').style.color = '#ffffff';
   document.querySelector('.drop').style.color = '#000000';
-  document.querySelector('h1').style.color = '#B961B9';
   flagMode = flagMode ? 0 : 1;
 }
 
@@ -30,7 +29,6 @@ const dark = function () {
   document.querySelector('.mode').style.backgroundColor = '#ffffff';
   document.querySelector('.mode').style.color = '#000000';
   document.querySelector('.drop').style.color = '#ffffff';
-  document.querySelector('h1').style.color = '#ed2839';
   flagMode = flagMode ? 0 : 1;
 }
 
