@@ -221,6 +221,8 @@ h1,h2,h3{
   border: 6px solid #9CA3AF;
   border-radius: 3rem;
   padding: 3rem;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 

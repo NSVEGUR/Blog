@@ -12,6 +12,7 @@ let flagOverlay = 1;
 let dropDown = document.querySelector('.intro');
 let dropOverlay = document.querySelector('.body-overlay');
 
+
 const light = function () {
   document.querySelector('html').style.color = '#000000';
   document.querySelector('html').style.backgroundColor = '#f3f3f3';
@@ -31,6 +32,8 @@ const dark = function () {
   document.querySelector('.drop').style.color = '#ffffff';
   flagMode = flagMode ? 0 : 1;
 }
+
+light();
 
 document.querySelector('.mode').addEventListener
   ('click', function () {
