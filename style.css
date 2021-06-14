@@ -158,9 +158,8 @@ nav{
 }
 
 .menu:hover{
-  color:rgb(131, 37, 131);
   padding: 0% 33%;
-  background: rgba(185, 97, 185, 0.144);
+  background: #9CA3AF;
   border-radius: 5rem;
 }
 
@@ -219,7 +218,7 @@ h1,h2,h3{
   border-bottom-right-radius: 3rem;
 }
 .card{
-  border: 6px solid rgba(185, 97, 185, 0.144);
+  border: 6px solid #9CA3AF;
   border-radius: 3rem;
   padding: 3rem;
 }
@@ -261,7 +260,7 @@ h1,h2,h3{
 }
 
 .box-card, .intro{
-  background:rgba(185, 97, 185, 0.144);
+  background:#9CA3AF;
   border-radius: 2rem;
   margin: 10px;
   box-shadow: 2px 2px 4px white;
