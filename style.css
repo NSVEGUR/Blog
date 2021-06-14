@@ -259,8 +259,8 @@ h1,h2,h3{
   margin-right:20px;
 }
 
-.box-card, .intro{
-  background:#9CA3AF;
+.box-card{
+  background-color: rgba(107, 103, 103, 0.15);  
   border-radius: 2rem;
   margin: 10px;
   box-shadow: 2px 2px 4px white;
