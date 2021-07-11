@@ -159,7 +159,7 @@ nav{
 
 .menu:hover{
   padding: 0% 33%;
-  background: #9CA3AF;
+  background: #6e6f70;
   border-radius: 5rem;
 }
 
@@ -330,14 +330,69 @@ h1,h2,h3{
   position:relative;
 }
 
-
 .ping:hover{
   transform:scale(1.2);
 }
 
-@media screen and (max-width: 1100px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
+.works{
+  display: grid;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 29rem;
+  justify-content: center;
+  align-content: center;
+}
+.work{
+  width: 100%;
+  height: 100%;
+}
+.work-title{
+  height: 4rem;
+  background: #9CA3AF;
+  align-self: center;
+  align-content: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  color: black;
+}
+.work-img{
+  width: 100%;
+  height: 20rem;
+}
+.work-caption{
+  height: 4rem;
+  background: #9CA3AF;
+  margin-top: -1.5rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  color: black;
+}
+.todo{
+  grid-column: 1/2;
+  margin-right: 1rem;
+}
+.cal{
+  grid-column: 2/3;
+  margin-left: 1rem;
+}
+
+@media (orientation: portrait) {
+
+  .works{
+    grid-template-columns: 100%;
+    grid-template-rows: 28rem 28rem;
+    margin-bottom: 2rem;
+  }
+  .todo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-right:0;
+  }
+  .cal{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 1rem;
+    margin-left: 0;
   }
 }
