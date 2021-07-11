@@ -342,6 +342,7 @@ h1,h2,h3{
 }
 .work-title{
   height: 4rem;
+  font-size: 1.5rem;
   background: #9CA3AF;
   align-self: center;
   align-content: center;
@@ -359,7 +360,7 @@ h1,h2,h3{
   margin-top: -1.5rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  color: black;
+  color: rgb(94, 92, 92);
 }
 .todo{
   grid-column: 1/2;
