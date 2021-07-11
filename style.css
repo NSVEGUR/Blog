@@ -249,16 +249,9 @@ h1,h2,h3{
   width:100%;
   justify-content: space-evenly;
 }
-.ping-1{
+.ping-1, .ping-2, .ping-3{
   width:50%;
   align-items: center;
-  margin-left:20px;
-}
-.ping-2{
-  width:50%;
-  align-items: center;
-  margin-top:20px;
-  margin-right:20px;
 }
 
 .box-card{
@@ -298,7 +291,7 @@ h1,h2,h3{
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   justify-content: center;
   align-items: center;
   box-shadow: none;
