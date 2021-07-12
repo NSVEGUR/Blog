@@ -425,6 +425,7 @@ h1,h2,h3{
   height: 20rem;
 }
 .work-caption{
+  font-size: 0.8rem;
   height: 4rem;
   background: #9CA3AF;
   margin-top: -1.5rem;
@@ -464,7 +465,7 @@ h1,h2,h3{
 @media screen and (min-width: 1000px)
 {
   body{
-    width: 75%;
+    width: 80%;
     margin: auto;
   }
 
