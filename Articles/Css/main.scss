@@ -20,8 +20,8 @@
   left: 65%;
 }
 
-.logo{
-  height: 300px;
+.Logo{
+  height: 200px;
 }
 main{
  
@@ -49,6 +49,8 @@ main{
     border-radius: 1rem;
     padding: 0 0 0 50px;
     color: black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
     &:before{
       content: '';
@@ -87,6 +89,8 @@ main{
   .forCodes{
     width: 100%; 
     color: black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     h4{
     font-family: monospace;
     font-weight: lighter;
@@ -99,6 +103,12 @@ main{
     white-space: nowrap;
     i{
       color: #1971c2; 
+    }
+  }
+  ol{
+    li{
+      font-family: map-get($font-family, type-2 );
+      font-size: map-get($font-size, captions);
     }
   }
   section{

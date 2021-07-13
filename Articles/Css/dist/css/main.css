@@ -242,8 +242,8 @@ h1, h2, h3 {
   left: 65%;
 }
 
-.logo {
-  height: 300px;
+.Logo {
+  height: 200px;
 }
 
 main {
@@ -278,6 +278,8 @@ main .forHeaders {
   border-radius: 1rem;
   padding: 0 0 0 50px;
   color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 main .forHeaders:before {
@@ -321,6 +323,8 @@ main img {
 main .forCodes {
   width: 100%;
   color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   position: relative;
   background: #d0ebff;
   border-radius: 1rem;
@@ -336,6 +340,11 @@ main .forCodes h4 {
 
 main .forCodes i {
   color: #1971c2;
+}
+
+main ol li {
+  font-family: "Palanquin Dark";
+  font-size: 27px;
 }
 
 main section li {

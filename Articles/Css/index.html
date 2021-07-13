@@ -27,11 +27,96 @@
   </div>
 </nav>
 <main>
-  <img class="logo" src="Images/logo.png"><br /><br />
+  <img class="Logo" src="Images/logo.png"><br /><br />
   <hr>
   <h1>CSS- Course for Beginners</h1><br />
   <hr>
-
+  <h4>Hello there!</h4>
+  <p> Lets move forward from html basics to CSS.. </p>
+  <h4>Abbreviation: Cascading style sheets
+  </h4>
+  <h4>
+    CSS is a scripting language which is somewhat like extension to html, used to design our web pages!
+  </h4>
+  <h4>
+    ->Extension-filename.css
+  </h4>
+  <div class="forHeaders section--0">
+    <h1>Linking .html file to .css file</h1>
+  </div>
+  <br><img src="Images/1 (1).png"><br>
+  <div class="forCodes">
+    <h4>We use 'link' -->tag to link html to other files</h4>
+    <h4> rel->linking to stylesheet like relation</h4>
+    <h4> href->as we know its for urls, here we should mention its location</h4>
+    <h4> type->type of doucment linking to it, here text/css</h4>
+  </div>
+  <div class="forHeaders section--1">
+    <h1>Selectors</h1>
+  </div>
+  <h4>They are ways of grabbing and manipulating HTML</h4>
+  <ol type="1">
+    <li>Element Selector</li>
+    <li>Class Selector-> We can style classes by selecting them as shown: </li>
+    <div class="forCodes">
+      <h4>'.' is a prefix for classes! </h4>
+    </div>
+    <li>Id selector->Styling ids</li>
+    <div class="forCodes">
+      <h4>'#' is a prefix for ids!
+      </h4>
+    </div>
+  </ol>
+  <p>classes and ids are to style a specified selected object, if we use element
+    selector consider for example of h1 all the h1 tags become modified into same
+    style as you mentioned, but using classes and ids for it makes them specified to
+    select.</p>
+  <div class="forHeaders section--2">
+    <h1>Specificity</h1>
+  </div>
+  <p>It tells us about when to use which type of selector, all selectors differ in
+    thier superiority complex! ->Id over writes the class, class over writes element;
+    ->But above all this inline selection style over writes all, as we don't use it much we can ignore;</p>
+  <div class="forHeaders section--3">
+    <h1>Pseudo Selectors</h1>
+  </div>
+  <p>We can use hover in tags like header to make it colored when we mark our cursor
+    on it. We use colon after tags to mention it as a pseudo selectors.
+    (h1:hover{ }) ->also there are concepts like only child, nth-child(n), 3rd
+    child concepts in lists and tables. ->We can also select links to make them pseudo
+    link and visited:-if visited its different else different.</p>
+  <div class="forHeaders section--4">
+    <h1>Advanced Selectors</h1>
+  </div>
+  <h4>Some basic advanced selectors are: </h4>
+  <div class="forCodes">
+    <h4> ->Following selector-selects the every following tag which follows the mentioned tag//Format: tag + tag'{}</h4>
+    <h4> ->Sibling selector-selects the following sibling of mentioned *only sibling if not even if its following it
+      don't selects it*//Format: tag ~ tag'{}</h4>
+    <h4> ->child selector-for example in lists it selects all the children of main tag//Format for e.g: ul > li{}</h4>
+    <h4>->descendent selector-for example in lists it selects all the children even its grand//Format: ul li{}</h4>
+  </div>
+  <div class="forHeaders section--5">
+    <h1>Attribute Selectors</h1>
+  </div>
+  <h4>We can select attributes and design them. Let's see some cases: </h4>
+  <div class="forCodes">
+    <h4>h1[attribute=value]{}->it is same as .class for class and #id for ids etc</h4>
+    <h4>img[src="location or link"]:through img[src^="if they are in same folder"]=>they makes every image in that
+      folder as mentioned style</h4>
+    <h4>through img[src*="if they are in same folder or even in different location which starts with that
+      location"]=>same style as mentioned </h4>
+    <h4>h1[class~=sub-link]: This is for attribute values containing white spaces(it implies a class either named
+      sub-link or which includes sub-link)
+    </h4>
+  </div>
+  <h2>Here is some example</h2>
+  <h4>Html file: </h4>
+  <br><img src="Images/1 (3).png"><br>
+  <h4>Css file: </h4>
+  <br><img src="Images/1 (4).png"><br>
+  <h3>Designed Page</h3>
+  <br><img src="Images/1 (5).png"><br>
   <hr>
   <h3 align="center">Made with ❤ by NSVegur</h3>
 </main>
