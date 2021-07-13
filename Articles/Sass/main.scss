@@ -1,0 +1,91 @@
+@import '../resets';
+@import '../blog';
+@import '../fonts';
+
+
+.head-flex{
+  background: #fcc2d7;
+}
+.hom::after, .art::after, .pro::after{
+  background: #f06595;
+}
+.hom-text, .art-text, .pro-text{
+  color: #a61e4d;
+}
+main{
+  border: 6px solid #f06595;
+  h1{
+    font-size: map-get($font-size, headers);
+  }
+  h2{
+    font-size: map-get($font-size, captions);
+  }
+  h3{
+    font-size: map-get($font-size, regular);
+  }
+  h4{
+    font-size: map-get($font-size, regular);
+    font-family: map-get($font-family, type-1 );
+  }
+  p{
+    font-size: map-get($font-size, regular);
+  }
+  .forHeaders{
+    width: 100%; 
+    position: relative;
+    background: #fcc2d7;
+    border-radius: 1rem;
+    padding: 0 0 0 20px;
+
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom:0;
+      width: 5px;
+      background: #f06595;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+    }
+  }
+  .logo{
+    height: 100px;
+  }
+  .syntax{
+   height: 300px;
+   border-radius: 2rem;
+   display: inline-block;
+  }
+  img{
+    border-radius: 1rem;
+  }
+  .forSnaps{
+    width: 100%; 
+    position: relative;
+    background: #ffdeeb;
+    border-radius: 1rem;
+    padding: 0 0 0 20px;
+
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom:0;
+      width: 5px;
+      background: #faa2c1;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+    }
+    i{
+      color: #f06595; 
+    }
+    span{
+      background:#faa2c1;
+      padding: 0px 5px 0px 5px;
+      font-weight: 700;
+      border-radius: 1rem;
+    }
+  }
+}

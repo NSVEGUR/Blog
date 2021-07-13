@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="My website" content="Give a wink at my competence">
+  <meta name="veiwport" content="width=device-width, initial scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&family=Quicksand:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <script defer src="script.js"></script>
+  <title>Vegur's Articles</title>
+</head>
+<nav>
+  <div class="head-flex">
+    <div class="head-item hom"><span class="hom-text">Home</span></div>
+    <div class="head-item art">
+      <span class="art-text">Navigate</span>
+    </div>
+    <div class="head-item pro"><span class="pro-text">Other Articles</span>
+    </div>
+    <div class="mode">✹</div>
+  </div>
+</nav>
+<main>
+  <img class="logo" src="Images/logo.png"><br /><br />
+  <hr>
+  <h1>Git & Github setup for beginners</h1><br />
+  <hr>
+  <h4>👋guys!!</h4><br />
+  <h4>🤓I am Nagasai Vegur</h4><br />
+  <h4>🔰This is my first article.</h4><br />
+  <h4>🤪Now lets dive into the topic we need to learn.</h4><br />
+  <p>Git is like a platform to track your work through out the programming
+    career. Lets make it simple 😉, you take pictures with your camera which
+    are stored in gallery in your mobile and upload them to some social media
+    platform to track your common life matters. Likewise you write codes
+    and do many projects and they are stored in your local machine,
+    here git is a platform to make a track of it. As insta you can
+    make it public and private as your convinience. I said you this in
+    simple words as I understood but there’s a lot to know, even I learnt
+    about this yesterday 😝</p><br />
+  <h4>Now create your insta, sorry git acc 😛</h4><br />
+  <hr><br />
+  <div class="forHeaders section--0">
+    <h2>Create your Github acc using the below link</h2>
+  </div><br> <br><br>
+  <h3>👉🏻<a href="https://github.com/" target="_blank">GitHub</a></h3>
+  <p>After creation just explore it for few minutes!
+    ->Then create a new repository as shown in top right corner of the image given below.</p>
+  <br /><img src="Images/1.png" /><br /><br />
+  <p> ->Give a name and description and hit on create a repository as given below.</p><br />
+  <br /><img src="Images/2.png" /><br /><br />
+  <p> ->Now you can add a new file README.md to give some hints about what you are doing in this repository</p><br />
+  <br /><img src="Images/3.png" /><br /><br />
+  <p>You can find add file option as provided in the above image and also you can take a look
+    at a README.md file which’s providing information about my profile.</p><br />
+  <h4> ->Now lets make it from our local machine.</h4>
+  <h3>Download the git bash using this link based on your OS -> <a
+      href="https://www.atlassian.com/git/tutorials/install-git" target="_blank" />Install Git</a></h3>
+  <br />
+  <div class="forHeaders section--1">
+    <h2>Use below commands in your local terminal to connect it to your git account</h2>
+  </div><br />
+  <br />
+  <div class="forCodes">
+    <h4><i> => </i>git config --global user.name "user name used in git"</h4><br />
+    <h4><i> => </i>git config --global user.email "mail id you need to connect with"</h4>
+  </div><br />
+  <br />
+  <div class="forHeaders section--2">
+    <h2>Use this clone command to clone online repository</h2>
+  </div><br />
+  <div class="forCodes">
+    <h4><i> => </i>git clone "link of your repository"</h4>
+  </div><br />
+  <br />
+  <h4>you can find the link of your as shown below in mine.</h4>
+  <br /><img src="Images/4.png" /><br /><br />
+  <h4>Now you can access your repository through your local machine but changes made are only dedicated to local!</h4>
+  <br />
+  <div class="forHeaders section--3">
+    <h2>Here are some git commands to access from git to local and local to git</h2>
+  </div><br />
+  <br />
+  <div class="forCodes">
+    <h4><i> => </i>git add . ----- *A period command which is used to stage all the changes you done in that repository*
+    </h4><br />
+    <h4><i> => </i> git add 'file_name' ----- *Command used to stage the changes in a specifice file* **Here stage
+      refers to add the changes**
+    </h4>
+  </div><br />
+  <br>
+  <h4>After every change before you push it to online you need to commit, it may be several changes or even one.</h4>
+  <br>
+  <br />
+  <div class="forCodes">
+    <h4><i> => </i>git commit -m "main commit message to show up" -m "description of that commit" ----- *This is only to
+      commit the staged file*
+    </h4><br />
+    <h4><i> => </i>git commit -am "main commit message to show up" ----- *Using -am functions as both staging and
+      commiting function*
+    </h4>
+  </div><br />
+  <h4>After this you need a remote to connect your local to online like ssh</h4>
+  <h4> ->Now generate a key in public formate and add it to your git ssh keys.
+  </h4><br>
+  <br />
+  <div class="forCodes">
+    <h4><i> => </i>ssh-keygen -t rsa -b 4096 -C "mailid"
+    </h4><br />
+  </div><br />
+  <p>This command generates a key in your specified folder,
+    copy that using cat and highlighting the key and paste it at you git acc ssh
+    keys to give access to push changes made in local machine to your online
+    repository.
+  </p>
+  <br /><img src="Images/5.png" /><br /><br /><br>
+  <h4>
+    You can see adding ssh key option in accout settings and then in ssh and gpg keys bar.
+  </h4>
+  <p>
+    Follow the instructions provided in the below link based on your os to make up the above statement if different from
+    windows.
+    <a target="_blank"
+      href="https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">ssh
+      agent</a>
+  </p>
+  <h4>YO! you can now push it to online</h4>
+  <br />
+  <div class="forCodes">
+    <h4><i> => </i>git push origin branch ----- *This is to push the changes made in local machine to online*
+    </h4><br />
+  </div><br />
+  <h4>Refresh the page to see the changes made!</h4>
+  <h4> Lets create a repository in local and then add it to git!</h4>
+  <p>Create a folder as ususally using mkdir command in your terminal, and add a .md or .txt or .c file as your wish.
+    Then use git add
+    . to stage the file, but it shows error due to no .git files in that folder.</p>
+  <br />
+  <div class="forCodes">
+    <h4><i> => </i>git init ----- *use this command to add .git file to the new local folder*
+    </h4><br />
+  </div><br />
+  <p>Now as usally stage and commit the changes you made. But git push statement doesn’t work here as there is no remote
+    access or knowledge about where to push the repository to the terminal.
+    So create another repository in online mode and then copy the link of that repository.</p>
+  <br />
+  <div class="forCodes">
+    <h4><i> => </i>git remote add origin "paste the link of repository here" ----- *now terminal knows where to push the
+      changes made*
+    </h4><br />
+    <h4><i> => </i>git remote -v ----- *This command shows the remote information*
+    </h4><br />
+    <h4><i> => </i>git push origin branch ----- *(new branch creates a branch in it automatically if theres no default,
+      if its present you need to mention it specifivally)*
+    </h4><br />
+  </div><br />
+  <br />
+  <div class="forHeaders section--4">
+    <h2>Now lets move on to branching, merging and pull concept!</h2>
+  </div><br />
+  <p>These are useful when many are working under a specific repository or
+    if any pub finds a bug and added a pull request to correct your code, like wise.</p>
+  <br />
+  <div class="forCodes">
+    <h4><i> => </i>git branch ----- *Printd the branches present in that repository and highlights the current branch*
+    </h4><br />
+    <h4><i> => </i>git checkout -b feature-temp ----- *checksout from current branch
+      '-b' creates new branch names feature-temp and moves into it*
+    </h4><br />
+    <h4><i> => </i>git branch -d feature-temp ----- *deletes the mentioned branch*
+    </h4><br />
+    <h4><i> => </i>git diff ----- *spots the differnce between current and main repository
+    </h4><br />
+  </div><br />
+  <h4>Now you can make pull request as</h4>
+  <br />
+  <div class="forCodes">
+    <h4><i> => </i>git pull feature-temp </h4><br />
+  </div><br />
+  <h4>Then you can see a pull request which you can approve on your git.</h4>
+  <h4>Thats it!!!</h4>
+  <h3>YAYY!!, YOU GOT THIS BEGINNER FOR GIT&GITHUB!!</h3><br>
+  <section>
+    <hr>
+    <h1>Nav-Through</h1>
+    <hr>
+    <ul class="course-navigation">
+      <li>Creation</li>
+      <li>Connecting local</li>
+      <li>Cloning</li>
+      <li>Local-Online & Online-local</li>
+      <li>Branch, merge, pull!</li>
+    </ul>
+  </section><br>
+  <hr>
+  <h3 align="center">Made with ❤ by NSVegur</h3>
+</main>
+
+</html>

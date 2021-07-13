@@ -1,0 +1,22 @@
+$font-size: (
+  'regular': 20px,
+  'headers': 40px,
+  'captions': 27px
+);
+
+$font-family: (
+  'type-1': 'Quicksand',
+  'type-2': 'Palanquin Dark'
+);
+
+p{
+  font-family: 'Quicksand', sans-serif;
+  font-size:25px;
+  font-weight: bold;
+  text-align:justify;
+  text-justify: inter-word;
+}
+
+h1,h2,h3{
+  font-family: 'Palanquin Dark', sans-serif;
+}
