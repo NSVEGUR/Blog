@@ -229,8 +229,9 @@ h1, h2, h3 {
   cursor: pointer;
 }
 
-.hom-text, .art-text, .pro-text {
+.hom-text, .art-text, .pro-text, .mode-text {
   color: white;
+  cursor: pointer;
 }
 
 .art-text {

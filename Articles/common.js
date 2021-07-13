@@ -9,12 +9,18 @@ const theme = function (flag) {
   if (flag) {
     document.querySelector('body').style.color = '#000000';
     document.querySelector('body').style.backgroundColor = '#f2f2f2';
+    document.querySelectorAll('img').forEach((e) => {
+      e.style.boxShadow = '3px 3px 5px #343a40';
+    })
     localStorage.setItem('modeFlag', 0);
   }
   else {
     document.querySelector('body').style.color = '#ffffff';
     document.querySelector('body').style.backgroundColor = '#121212';
     localStorage.setItem('modeFlag', 1);
+    document.querySelectorAll('img').forEach((e) => {
+      e.style.boxShadow = '1.5px 1.5px 3px #f5f5f5';
+    })
   }
 }
 
@@ -30,7 +36,7 @@ homeBtn.addEventListener('click',
 navBtn.addEventListener('click',
   () => {
     nav.scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
     })
   })
 
