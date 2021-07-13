@@ -23,6 +23,10 @@ nav {
   z-index: 3;
 }
 
+body {
+  background: #f2f2f2;
+}
+
 .head-flex {
   height: 60px;
   display: -webkit-box;
@@ -130,6 +134,27 @@ nav {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
+.mode::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 90%;
+  width: 10%;
+  margin: 0;
+  height: 100%;
+  border-bottom-right-radius: 1rem;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+  background: #5e5c5c;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
 .head-item:hover::after {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
@@ -163,17 +188,8 @@ nav {
   position: absolute;
   top: 0;
   bottom: 1;
+  left: 92%;
   z-index: 5;
-}
-
-.mode {
-  height: 70px;
-  width: 70px;
-}
-
-.mode:hover {
-  background: #d4cece7e;
-  border-radius: 50%;
 }
 
 main {
@@ -208,13 +224,14 @@ h1, h2, h3 {
   background: #495057;
 }
 
-.hom::after, .art::after, .pro::after {
+.hom::after, .art::after, .pro::after, .mode::after {
   background: #adb5bd;
   cursor: pointer;
 }
 
-.hom-text, .art-text, .pro-text {
+.hom-text, .art-text, .pro-text, .mode-text {
   color: white;
+  cursor: pointer;
 }
 
 .art-text {
@@ -256,6 +273,7 @@ main .forHeaders {
   background: #adb5bd;
   border-radius: 1rem;
   padding: 0 0 0 50px;
+  color: black;
 }
 
 main .forHeaders:before {
@@ -298,6 +316,7 @@ main img {
 
 main .forCodes {
   width: 100%;
+  color: black;
   position: relative;
   background: #f8f9fa;
   border-radius: 1rem;

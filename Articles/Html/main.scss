@@ -3,9 +3,9 @@
 @import '../fonts';
 
 .head-flex{
-  background:  #e8590c;
+  background: #e8590c;
 }
-.hom::after, .art::after, .pro::after{
+.hom::after, .art::after, .pro::after, .mode::after{
   background: #ff922b;
   cursor: pointer;
 }
@@ -47,6 +47,7 @@ main{
     padding: 0 0 0 50px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    color: black;
 
     &:before{
       content: '';

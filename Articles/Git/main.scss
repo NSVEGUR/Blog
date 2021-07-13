@@ -5,12 +5,13 @@
 .head-flex{
   background:  #495057;
 }
-.hom::after, .art::after, .pro::after{
+.hom::after, .art::after, .pro::after, .mode::after{
   background: #adb5bd;
   cursor: pointer;
 }
-.hom-text, .art-text, .pro-text{
+.hom-text, .art-text, .pro-text, .mode-text{
   color: white;
+  cursor: pointer;
 }
 .art-text{
   left: 38%;
@@ -42,6 +43,7 @@ main{
     background: #adb5bd;
     border-radius: 1rem;
     padding: 0 0 0 50px;
+    color: black;
 
     &:before{
       content: '';
@@ -79,6 +81,7 @@ main{
   }
   .forCodes{
     width: 100%; 
+    color: black;
     h4{
     font-family: monospace;
     font-weight: lighter;

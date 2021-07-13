@@ -5,6 +5,10 @@ nav {
   z-index: 3;
 }
 
+body{
+  background: #f2f2f2;
+}
+
 .head-flex {
   height: 60px;
   display: -webkit-box;
@@ -112,7 +116,28 @@ nav {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.head-item:hover::after {
+.mode::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 90%;
+  width: 10%;
+  margin: 0;
+  height: 100%;
+  border-bottom-right-radius: 1rem;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  background: #5e5c5c;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.head-item:hover::after{
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
 }
@@ -145,17 +170,11 @@ nav {
   position: absolute;
   top: 0;
   bottom: 1;
+  left: 92%;
   z-index: 5;
 }
 
-.mode{
-  height: 70px;
-  width: 70px;
-}
-.mode:hover{
-  background: #d4cece7e;
-  border-radius: 50%;
-}
+
 
 main{
   border: 6px solid #9CA3AF;
