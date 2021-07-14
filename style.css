@@ -70,18 +70,6 @@ a:focus{
   align-items: center;
   margin-bottom: 5px;
 }
-.mode{
-  width: 4.2rem;
-  font-size: 3rem;
-  font-weight: 900;
-  border: none;
-  align-self: center;
-  border-radius: 50%;
-  position: absolute;
-  top: 2rem;
-  right: 6.2rem;
-  z-index: 9;
-}
 
 .drop{
   width: 6rem;
@@ -142,6 +130,7 @@ nav{
   font-weight: bolder;
   font-size:40px;
   text-align: center;
+  cursor: pointer;
   font-family:  'Palanquin Dark', sans-serif; 
   margin-bottom: 10px;
 }
@@ -151,12 +140,45 @@ nav{
   color:white;
   text-decoration: none;
   text-shadow: 3px 3px 3px black;
-  width: 33.33333%;
+  width: 30%;
   height: 60px;
   font-weight: bolder;
   font-size:40px;
   text-align: center;
   font-family:  'Palanquin Dark', sans-serif; 
+}
+.mode{
+  color: white;
+  text-decoration: none;
+  text-shadow: 3px 3px 3px black;
+  width: 10%;
+  height: 60px;
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Palanquin Dark', sans-serif;
+}
+
+
+.mode::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 90%;
+  width: 10%;
+  margin: 0;
+  height: 100%;
+  border-bottom-right-radius: 1rem;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+  background: #5e5c5c;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .hom::after {
@@ -165,7 +187,7 @@ nav{
   top: 0;
   bottom: 0;
   left: 0;
-  width: 33.3333%;
+  width: 30%;
   margin: 0;
   height: 100%;
   transform: scaleY(0);
@@ -181,8 +203,8 @@ nav{
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 33.3333%;
-  width: 33.3333%;
+  left: 30%;
+  width: 30%;
   height: 100%;
   transform: scaleY(0);
   transform-origin: bottom center;
@@ -195,9 +217,8 @@ nav{
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 66.6666%;
-  width: 33.3333%;
-  border-bottom-right-radius: 1rem;
+  left: 60%;
+  width: 30%;
   margin: 0;
   height: 100%;
   transform: scaleY(0);
@@ -222,15 +243,23 @@ nav{
   position: absolute;
   top: 0;
   bottom: 1;
-  left: 43.3333%;
+  left: 40%;
   z-index: 5;
 }
 .pro-text{
   position: absolute;
   top: 0;
   bottom: 1;
-  left: 76.6666%;
+  left: 70%;
   z-index: 5;
+}
+
+.mode-text{
+  position: absolute;
+  bottom: 1;
+  right: 2%;
+  left: 92%;
+  z-index: 10;
 }
 
 
@@ -474,7 +503,7 @@ h1,h2,h3{
   }
 
   .intro{
-    width: 75%;
+    width: 80%;
     margin: auto;
     font-size: inherit;
   }

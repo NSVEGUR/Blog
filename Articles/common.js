@@ -3,6 +3,7 @@
 const nav = document.querySelector('.course-navigation');
 const navBtn = document.querySelector('.art');
 const homeBtn = document.querySelector('.hom');
+const othersBtn = document.querySelector('.pro');
 const modeBtn = document.querySelector('.mode');
 
 const theme = function (flag) {
@@ -29,6 +30,11 @@ modeBtn.addEventListener('click', () => {
 })
 
 homeBtn.addEventListener('click',
+  () => {
+    window.location = "../../index.html"
+  })
+
+othersBtn.addEventListener('click',
   () => {
     window.location = "../../index.html"
   })

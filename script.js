@@ -28,9 +28,6 @@ let dropOverlay = document.querySelector('.body-overlay');
 const light = function () {
   document.querySelector('html').style.color = '#000000';
   document.querySelector('html').style.backgroundColor = '#f3f3f3';
-  document.querySelector('.mode').textContent = '☾';
-  document.querySelector('.mode').style.backgroundColor = '#000000';
-  document.querySelector('.mode').style.color = '#ffffff';
   document.querySelector('.drop').style.color = '#000000';
   localStorage.setItem('themeCount', '1');
 }
@@ -38,9 +35,6 @@ const light = function () {
 const dark = function () {
   document.querySelector('html').style.color = '#ffffff';
   document.querySelector('html').style.backgroundColor = '#121212';
-  document.querySelector('.mode').textContent = '✹';
-  document.querySelector('.mode').style.backgroundColor = '#ffffff';
-  document.querySelector('.mode').style.color = '#000000';
   document.querySelector('.drop').style.color = '#ffffff';
   localStorage.setItem('themeCount', '0');
 }
