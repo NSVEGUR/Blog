@@ -117,6 +117,327 @@
   <br><img src="Images/1 (4).png"><br>
   <h3>Designed Page</h3>
   <br><img src="Images/1 (5).png"><br>
+  <div class="forHeaders section--6">
+    <h1>Colors</h1>
+  </div>
+  <h4>Basic structre: </h4>
+  <div class="forCodes">
+    <h4>selector{ </h4>
+    <h4>property: value; ->This part in braces is called as css block.</h4>
+    <h4>} </h4>
+  </div>
+  <p>Use this color picker provided by google,
+    a knowledge learnt above about selectors to build a simple web page of your own:</p>
+  <h3><a href="https://www.google.com/search?q=color+picker" target="_blank">Color Picker</a></h3>
+  <div class="forHeaders section--7">
+    <h1>Background Image Setups</h1>
+  </div>
+  <div class="forCodes">
+    <h4>background: url("");
+    </h4>
+  </div>
+  <p>Go through the code and made observations, how div makes a container
+    and images are contained(without changning proportions), covered(only a single image), or some random size. Its
+    default is repeat, you need to set it to no-repeat if needed in div.</p>
+  <h3>Html: </h3>
+  <br><img src="Images/1 (6).png"><br>
+  <h3>Css: </h3>
+  <br><img src="Images/1 (7).png"><br>
+  <h3>Designed Page: </h3>
+  <br><img src="Images/1 (8).png"><br>
+  <div class="forHeaders section--8">
+    <h1>Opacity and Transparency</h1>
+  </div>
+  <p>In color selection while using rgb( , , ), you can add another component
+    to it called alpha, formatted as rgba( , , , ). Here unlike others a is not from 0 upto 255, it's starts from 0 and
+    ends at 1(even decimals are used) which implies 0->fully transaparent, 1->fully opaque.</p>
+  <div class="forHeaders section--9">
+    <h1>Gradient</h1>
+  </div>
+  <p>You can make divisons and backgrounds as gradient.There are two types, linear and radial.</p>
+  <h3>Linear-></h3>
+  <p>background:linear-gradient(to right, color1, color2, ...); ---top, right, bottom and left are directions.</p>
+  <p>background:linear-gradient(to top right, color1, color2, ...); ---also known as diagonal gradient.</p>
+  <p>background:linear-gradient(someangledeg, color1, color2, ...); ---to make it to a specific angle.</p>
+  <h3>Radial-></h3>
+  <p> background:radial-gradient(20%red, 30%orange, 40%yellow); ---But percentages must be in increasing order.</p>
+  <p> background:radial-gradient(circle, 20%red, 30%orange, 40%yellow); ---controls shape.</p>
+  <p>E.g., for linear: background: linear-gradient(to right, black, white);</p>
+  <br><img src="Images/1 (9).png"><br>
+  <p>E.g., for radial: background: radial-gradient( black, white);</p>
+  <br><img src="Images/1 (10).png"><br>
+  <div class="forHeaders section--10">
+    <h1>Text manipulation</h1>
+  </div>
+  <div class="forCodes">
+    <h4>.class{</h4>
+    <h4>text-decoration: underline/overline/line-through;</h4>
+    <h4> text-transform: capitalise/uppercase/lowercase;</h4>
+    <h4> text-align: center/justify/left/right;</h4>
+    <h4> }</h4>
+  </div>
+  <h2>#note: </h2>
+  <p> size: num%em -> make specified amount of changes on default size. numvw -> num times the view width.
+    numvh -> num times the view height.
+  </p>
+  <div class="forHeaders section--11">
+    <h1>Font manipulation</h1>
+  </div>
+  <div class="forCodes">
+    <h4> .class{</h4>
+    <h4> font-size: size;</h4>
+    <h4> font-weight: 0 to based on font limit;</h4>
+    <h4> font-style: normal/italic/oblique;</h4>
+    <h4> }</h4>
+  </div>
+  <div class="forHeaders section--12">
+    <h1>Font families</h1>
+  </div>
+  <div class="forCodes">
+    <h4> font-family: type;</h4>
+    <h4> like->san-serif, monospace, etc...</h4>
+    <h4> If given font is not able to display the gievn we can specify more than one.</h4>
+    <h4> font-family: "main" , temp1, temp2;</h4>
+  </div>
+  <div class="forHeaders section--13">
+    <h1>Using external fonts</h1>
+  </div>
+  <h3>Find google fonts: <a href="https://fonts.google.com/">GOOGLE FONTS</a></h3>
+  <p>Follow comments mentioned in image after selecting which kinda family you needed in above link:
+  </p>
+  <br><img src="Images/1 (11).png"><br>
+  <h2>Take this example: </h2>
+  <h3>Html: </h3>
+  <br><img src="Images/1 (12).png"><br>
+  <h3>Css: </h3>
+  <br><img src="Images/1 (13).png"><br>
+  <h3>Designed page: </h3>
+  <br><img src="Images/1 (14).png"><br>
+  <div class="forHeaders section--14">
+    <h1>Layouts</h1>
+  </div>
+  <h2>Box model</h2>
+  <h4>In css everything can be divided into a box and asumed as below: </h4>
+  <br><img src="Images/1 (15).png"><br>
+  <h2>Css Borders</h2>
+  <p>Use same format as background: </p>
+  <div class="forCodes">
+    <h4>border: size style color;</h4>
+    <h4>commonly used styles- solid, dotted, dashed, double;</h4>
+  </div>
+  <h2>Margin and Padding</h2>
+  <p>Padding=>the space between inner content and its border.
+    Margin=>the space between outer content and border of inner.</p>
+  <div class="forCodes">
+    <h4>Format: padding: size;-> applies for all</h4>
+    <h4>padding: top right bottom left;->to specify differently</h4>
+    <h4>margin: size;-> applies for all</h4>
+    <h4>margin: top & bottom right & left;->sepcifies differently with two components as same.</h4>
+  </div>
+  <h2>Float and display</h2>
+  <h4>float: right/left/center;->makes the selected to float at the mentioned and push the compliments to top.</h4>
+  <h4>float: inherit; -> inherits the same float property as of its parent;</h4>
+  <h4>float: initial; -> intialises as it was initially.</h4>
+  <h3>E.g.,</h3>
+  <div class="forCodes">
+    <h4>#me{</h4>
+    <h4>float: right;</h4>
+    <h4>width: 500px;</h4>
+    <h4>height: 500px;</h4>
+    <h4>border: 10px solid steelblue;</h4>
+    <h4>padding: 20px;</h4>
+    <h4>margin: 20px;</h4>
+    <h4> }</h4>
+  </div>
+  <br><img src="Images/1 (16).png"><br>
+  <h2>Display</h2>
+  <div class="forCodes">
+    <h4>display: none; -> To make it invisible</h4>
+    <h4>display: inline-block; -> inline-block implies creating a seperate block in the same line</h4>
+    <h4>display: inline; -> as we know inline implies next element starts next to the ended</h4>
+    <h4> diplay: block; -> It doesn't tolerates any elements beside it and</h4>
+  </div>
+  <div class="forHeaders section--15">
+    <h1>Flex</h1>
+  </div>
+  <p> Flex is somewhat like aligning elements in container.
+    display: flex; -> makes specified container to display as flex which is row as default & we can change it using
+    flex-alignment: column;
+    justify-content: space-between/space-around/space-evenly/center; -> It justifies the content in the container as
+    speicified.</p>
+  <h3>Look at this:</h3>
+  <h3>Html: </h3>
+  <br><img src="Images/1 (17).png"><br>
+  <h3>Css: </h3>
+  <br><img src="Images/1 (18).png"><br>
+  <h3>Designed Page:</h3>
+  <br><img src="Images/1 (19).png"><br>
+  <h2>Alignment</h2>
+  <h4> align-items: center/flex-start/flex-end; -> aligns elements with respect to flex;</h4>
+  <h4> align-items: base-line/stretch; -> stretches the selected or make all the selected with same base-line as
+    mentioned;
+  </h4>
+  <h4> You can also use order for flex: order: num between min to max; -> to align objects in random manner as you
+    needed.
+  </h4>
+  <h2>Shrink, Grow and Basis</h2>
+  <h4> flex-basis: size; -> minimum width of the selected in flex box</h4>
+  <h4> flex-shrink: 1; -> 1 is default value which makes all elements to shrink in same size.</h4>
+  <h4> flex-grow: 0; -> 0 is default value, for others it will be mentioned times grown.</h4>
+  <h2>Flex Property</h2>
+  <h4>We can make use of above three in one as in background.</h4>
+  <h4>flex: grow shrink basis; -> three in one statement!</h4>
+  <h2>Align-self</h2>
+  <h4>We can make use of above three in one as in background.</h4>
+  <h4> flex: grow shrink basis; -> three in one statement!</h4>
+  <div class="forHeaders section--16">
+    <h1>Grid</h1>
+  </div>
+  <h2>Difference between flex and grid</h2>
+  <h4> ->Displays differently</h4>
+  <h4> ->Grid provides more tools to design as our wish</h4>
+  <h4> ->Grid concentrantes both on width and height whereas flex more on width.</h4>
+  <h2>Display: </h2>
+  <h4> -> just replace display: flex; with display: grid; which makes container to display as grid, here column is
+    default.</h4>
+  <h4> -> jusitfy-content: space-around/space-between/center;</h4>
+  <h4> -> align-content: start/end/space-between; -> Here it spaces considering heights where as it is not available in
+    flex
+    since it only concentrates weight.</h4>
+  <h4> -> grid-row-gap: size;/grid-column-gap: size;</h4>
+  <h4> -> You can also specify them both in one as -> grid-gap: size size; here First size is row where as other is
+    column;</h4>
+  <h2>Columns and Rows</h2>
+  <p> -> You can specify number of rows and columns in the using:</p>
+  <div class="forCodes">
+    <h4> grid-template-column: 1px 2px 3px 4px;</h4>
+    <h4> grid-template-row: 1px 2px 3px 4px;</h4>
+    <h4> You can also keep auto at the place of size in px to specify it itself accordningly.</h4>
+  </div>
+  <h4> -> Row & column line concept</h4>
+  <h4> -This is main and al others we studied above are some extensions of this concept</h4>
+  <h4> -using grid-row: from_row / to_row; and grid-column: from_column / to_column; provides space to the specified as
+    mentioned.</h4>
+  <h3>Take a look: </h3>
+  <h3>Html: </h3>
+  <br><img src="Images/1 (20).png"><br>
+  <h3>Css: </h3>
+  <br><img src="Images/1 (21).png"><br>
+  <h3>Designed page: </h3>
+  <br><img src="Images/1 (22).png"><br>
+  <h4> =>We can also specify them both in one if we are getting confused using grid-area:
+    from_row/to_row/from_column/to_column;</h4>
+  <div class="forHeaders section--17">
+    <h1>Transition</h1>
+  </div>
+  <p> -> trasintion is nothing but the usual meaning changing from one state to other, we commonly use pseudoselectors
+    and add transition.</p>
+  <div class="forCodes">
+    <h4> transition: property duration style delay;</h4>
+    <h4>Commonly used styles are ease, ease-in-out, linear.</h4>
+  </div>
+  <p>Some old browsers don't support transitions, so we need to specify prefixes of certain browsers to not to face any
+    kinda errors.</p>
+  <div class="forCodes">
+    <h4> -webkit-transition: ->for chromium/android/iOS/safari</h4>
+    <h4> -webkit-transition: ->for chromium/android/iOS/safari</h4>
+    <h4> -moz-transition: -> for mozilo firefox</h4>
+    <h4> -o-transition: -> for opera</h4>
+    <h4> -ms-transition: -> for internet explorer</h4>
+  </div>
+  <div class="forHeaders section--18">
+    <h1>Transformation</h1>
+  </div>
+  <h4> Just keep in mind that using a statement in pseudoselector is different from using it in common selectors</h4>
+  <h4> ->transform: translate(px, px) -> it is somewhat like shifting its axis, to left is negetive to right is
+    positive.
+    Its
+    just 2d translation.</h4>
+  <h4> ->transform: scale(size) -> it scales i.e., sizes the selected.</h4>
+  <h4> ->transform: rotate(deg) -> it rotates the selected.</h4>
+  <h4> ->transform: skewX(deg)/skewY(deg)/skew() -> skew is somewhat like rotating only keeping a rod at the mentioned.
+    skew
+    is same as skewX which is default</h4>
+  <h4> ->transform: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) -> Use decimals at skew like
+    0.45
+    for
+    45deg and no need to specify units for others It is better to use others since matrix() funciton is slight messed up
+    and confusing!</h4>
+  <div class="forHeaders section--19">
+    <h1>Animations</h1>
+  </div>
+  <h2>Creation</h2>
+  <div class="forCodes">
+    <h4> @keyframes custom-name{</h4>
+    <h4> from{</h4>
+    <h4> }</h4>
+    <h4> to{</h4>
+    <h4> }</h4>
+    <h4> }</h4>
+    <br>
+    <p>You can also use percentages like at 0% at 30% at 100% randomly any number of times.
+      @keyframes is common for all
+      custom-name is you choice.
+      You can add any proporties you wanna animate in that specified place between braces of from and to or even
+      percentages if you used: </p><br>
+    <h4> like</h4>
+    <h4> 0%{</h4>
+    <h4> }</h4>
+    <h4> 25%{</h4>
+    <h4> }</h4>
+    <h4> 49%{</h4>
+    <h4> }</h4>
+    <h4> 99%{</h4>
+    <h4> }</h4>
+  </div>
+  <h2>Adding the created properties</h2>
+  <div class="forCodes">
+    <h4> selector{</h4>
+    <h4> animation-name: custom-name; -> the name you used @keyframes</h4>
+    <h4> animation-duration: time; -> the time span of that animation</h4>
+    <h4> animation-timing-function: linear/ease/ease-in-out; -> same as in transistions</h4>
+    <h4> animation-iteration-count: num; -> the times you wanna repeat animation even you can specify it as infinity;
+    </h4>
+    <h4> animation-direction: normal/reverse/alternate/alternate-reverse; -> normal is default, reverse is animation
+      starts</h4>
+    <h4> at the end and end at the start, alterate implies start from start then again from end, alternate reverse is
+      just</h4>
+    <h4> reverse of alternate.</h4>
+    <h4> animation-delay: time; -> the delay you wanna make to display that animation</h4>
+    <h4> short-hand=></h4>
+    <h4> animation: name duration function delay iteration-count direction;</h4>
+  </div>
+  <h2>And that's it!, you completed your css course successfully.</h2>
+  <h4>Now, just try to design a web page from scratch of your own.</h4>
+  <section>
+    <hr>
+    <div class="forHeaders section--2">
+      <h1>Nav-Through</h1>
+    </div>
+    <hr>
+    <ul class="course-navigation">
+      <li>Linking .html file to .css file</li>
+      <li>Selectors</li>
+      <li>Specificity</li>
+      <li>Pseudo Selectors</li>
+      <li>Advanced Selectors</li>
+      <li>Attribute Selectors</li>
+      <li>Colors</li>
+      <li>Background Image Setups</li>
+      <li>Opacity and Transparency</li>
+      <li>Gradient</li>
+      <li>Text Manipulation</li>
+      <li>Font Manipulation</li>
+      <li>Font Families</li>
+      <li>Using external fonts</li>
+      <li>Layouts</li>
+      <li>Flex</li>
+      <li>Grid</li>
+      <li>Transition</li>
+      <li>Transformation</li>
+      <li>Animations</li>
+    </ul>
+  </section><br>
   <hr>
   <h3 align="center">Made with ❤ by NSVegur</h3>
 </main>
