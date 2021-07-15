@@ -12,9 +12,7 @@ html {
           box-sizing: border-box;
 }
 
-body {
-  position: relative;
-}
+
 
 nav {
   position: -webkit-sticky;
@@ -25,6 +23,8 @@ nav {
 
 body {
   background: #f2f2f2;
+  position: relative;
+  width: 100%;
 }
 
 .head-flex {
@@ -193,20 +193,17 @@ body {
 }
 
 main {
+  width: 100%;
   border: 6px solid #9CA3AF;
   border-radius: 3rem;
   padding: 3rem;
   margin-top: 50px;
   margin-left: 10px;
   margin-right: 10px;
+  overflow-wrap: break-word;
 }
 
-@media screen and (min-width: 1000px) {
-  body {
-    width: 80%;
-    margin: auto;
-  }
-}
+
 
 p {
   font-family: 'Quicksand', sans-serif;
@@ -242,12 +239,12 @@ h1, h2, h3 {
   left: 65%;
 }
 
-.Logo {
-  height: 200px;
-}
-
 main {
   border: 6px solid #1971c2;
+}
+
+main .Logo {
+  height: 200px;
 }
 
 main h1 {
@@ -307,12 +304,6 @@ main .logo {
   height: 100px;
 }
 
-main .syntax {
-  height: 300px;
-  border-radius: 2rem;
-  display: inline-block;
-}
-
 main img {
   max-width: 100%;
   border-radius: 1rem;
@@ -356,4 +347,11 @@ main section li {
   font-weight: bold;
   cursor: pointer;
 }
-/*# sourceMappingURL=main.css.map */
+
+
+@media screen and (orientation: landscape) {
+  body {
+    width: 80%;
+    margin: auto;
+  }
+}
