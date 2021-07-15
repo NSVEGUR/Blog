@@ -25,6 +25,7 @@ nav {
 
 body {
   background: #f2f2f2;
+  width: 100%;
 }
 
 .head-flex {
@@ -342,6 +343,7 @@ main .forCodes i {
 }
 
 main section li {
+  margin-left: 2rem;
   font-family: "Quicksand";
   text-decoration: underline;
   margin-bottom: 1rem;

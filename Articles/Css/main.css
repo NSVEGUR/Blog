@@ -12,7 +12,9 @@ html {
           box-sizing: border-box;
 }
 
-
+body {
+  position: relative;
+}
 
 nav {
   position: -webkit-sticky;
@@ -23,7 +25,6 @@ nav {
 
 body {
   background: #f2f2f2;
-  position: relative;
   width: 100%;
 }
 
@@ -193,7 +194,6 @@ body {
 }
 
 main {
-  width: 100%;
   border: 6px solid #9CA3AF;
   border-radius: 3rem;
   padding: 3rem;
@@ -203,7 +203,12 @@ main {
   overflow-wrap: break-word;
 }
 
-
+@media screen and (min-width: 1000px) {
+  body {
+    width: 80%;
+    margin: auto;
+  }
+}
 
 p {
   font-family: 'Quicksand', sans-serif;
@@ -334,11 +339,13 @@ main .forCodes i {
 }
 
 main ol li {
+  margin-left: 2rem;
   font-family: "Palanquin Dark";
   font-size: 27px;
 }
 
 main section li {
+  margin-left: 2rem;
   font-family: "Quicksand";
   text-decoration: underline;
   margin-bottom: 1rem;
@@ -347,11 +354,4 @@ main section li {
   font-weight: bold;
   cursor: pointer;
 }
-
-
-@media screen and (orientation: landscape) {
-  body {
-    width: 80%;
-    margin: auto;
-  }
-}
+/*# sourceMappingURL=main.css.map */

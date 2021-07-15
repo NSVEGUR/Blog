@@ -98,6 +98,7 @@ main{
   }
   section{
     li{
+      margin-left: 2rem;
       font-family: map-get($font-family, type-1);
       text-decoration: underline;
       margin-bottom: 1rem;
